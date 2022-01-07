@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+<title>
+Rules of this Test
+</title>   
+<style>
+body{
+    background-color:pink;
+}
+#a:hover{
+    color:blue;
+}
+#myProgress {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background-color: #ddd;
+}
+
+#myBar {
+  background-color: #4CAF50;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+}
+
+ </style>
+ <script>
+ function move() {
+  var elem = document.getElementById("myBar");
+  var width = 0;
+  var id = setInterval(frame, 100);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+      window.open("question.html");
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+}
+ </script>
+<body>
+    <div style="height:40%;width:100%;position:fixed;">
+   <img src="advanced-sales-3-year-rule.jpg" style="position:absolute;height:100%;width:100%; border:2px solid red"> </div>
+    <div style="position:absolute;top: 45%;height: 100%;width: auto">  
+    <h1 style="background:linear-gradient(red,white,yellow,red); border:2px solid black" > Are you young at heart or wise beyond your years?</h1>
+    <h1 style="background:linear-gradient(red,white,yellow,red);border:2px solid black">Find out where you rank in this fun quiz!</h1>
+    <div style="margin:1% 20%;border: 2px solid black;z-index: 10;background: linear-gradient(orange,white,green,white)">
+      <h1 style="text-align: center">Rules:</h1>
+          <ol>
+        <li><h2>You must answer each question honestly and count up your score.</h2></li>
+        <li><h2>You have 10 question to answer and each question has 4 options.</h2></li>
+        <li><h2>In each option you wii be given some points like 10,20,30 or 40 points.</h2></li>
+        <li><h2>So based on this total points we calculate your mental age by scitifically proven method.</h2></li>
+    </ol>
+    </div>
+    <br>
+    <ul>
+        <h1 style="background:linear-gradient(red,yellow,pink,blue);border:2px solid black">
+            All The best.
+        </h1>
+    </ul>
+    <form action="question.html">
+     
+        <input type="radio"  name="agree" required>I hereby follow  all rules<br><br>
+        <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          
+</form>
+    <br><button onclick="move()">Submit</button>    
+    <p id="aaa"></p>
+  <div  style="border:2px solid black; border-top-width:auto;background-color:yellow;background-color: yellow">devloped  by Nilay Shah
+<a href="https://www.facebook.com/nilay.shah.92775" style="positon:absolute;top:50%;">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<i class="fab fa-facebook" a href="https://www.facebook.com/nilay.shah.92775"></i>
+</a>&nbsp;
+
+
+<a href="https://www.instagram.com/nilay_shah_nj/" style="positon:absolute;top:50%;">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+  <i class="fab fa-instagram"></i></a>&nbsp;
+  <a href="https://github.com/njshah301" style="positon:absolute;top:50%;">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <i class="fab fa-github"></i>
+  
+  </a>
+    </div>
+</body> 
+</head>
+</div>
+
+</html>
